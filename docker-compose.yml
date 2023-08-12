@@ -1,0 +1,9 @@
+version: '2'
+services:
+  data_format_conversion:
+    build:
+      context: .
+    environment:
+      - DOCKER_ENV=true
+    ports:
+      - "80:80"
