@@ -64,7 +64,7 @@ Clone the repository containing the Data Conversion Tool to your local machine:
 
 ```bash
 git clone git@github.com:moguloulou/data_format_conversion.git
-cd data-conversion-tool
+cd data_format_conversion
 ```
 
 #### 2. Build the Docker Image
