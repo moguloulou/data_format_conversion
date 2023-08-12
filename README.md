@@ -22,7 +22,8 @@ This is a simple tool for converting data between different formats using Python
 
 ## Examples
 
-1. Convert a hexadecimal number to decimal:    
+1. Convert a hexadecimal number to decimal:
+   ```bash
    Enter input format (HEX, BINARY, DECIMAL, UTF8): hex    
    Enter output format (HEX, BINARY, DECIMAL, UTF8): decimal      
    Enter file name in single quotes ('') for file input or data(separated by spaces) to convert: 1 a3 3  
@@ -30,66 +31,69 @@ This is a simple tool for converting data between different formats using Python
    1  
    163  
    3  
+   ```
+   
+2. Convert decimal data to binary and save to an output file when input from file:    
+    ```bash
+   Enter input format (HEX, BINARY, DECIMAL, UTF8): hex    
+   Enter output format (HEX, BINARY, DECIMAL, UTF8): binary    
+   Enter file name in single quotes ('') for file input or data(separated by spaces) to convert: 'input.txt'    
+   Converted data:    
+   00001010    
+   1010101110111011    
+   Data written to '20230812094022_output.txt'.
+   ```
 
-
-3. Convert decimal data to binary and save to an output file when input from file:    
-Enter input format (HEX, BINARY, DECIMAL, UTF8): hex    
-Enter output format (HEX, BINARY, DECIMAL, UTF8): binary    
-Enter file name in single quotes ('') for file input or data(separated by spaces) to convert: 'input.txt'    
-Converted data:    
-00001010    
-1010101110111011    
-Data written to '20230812094022_output.txt'.    
-
-4. Terminate by type "quit"    
-Enter input format (HEX, BINARY, DECIMAL, UTF8): hex    
-Enter output format (HEX, BINARY, DECIMAL, UTF8): quit    
-Terminating the program.    
+3. Terminate by type "quit"    
+   ```bash
+   Enter input format (HEX, BINARY, DECIMAL, UTF8): hex    
+   Enter output format (HEX, BINARY, DECIMAL, UTF8): quit    
+   Terminating the program. 
+   ```
 
 ## Running via Docker
 
 ### Prerequisites
 
-Before you begin, ensure that you have the following prerequisites installed on your system:
-
-1. Docker: Install Docker from the official website by following the instructions for your operating system: [Docker Installation Guide](https://docs.docker.com/get-docker/).
+Before you begin, ensure that you have the following prerequisites installed on your system:    
+Install Docker from the official website by following the instructions for your operating system: [Docker Installation Guide](https://docs.docker.com/get-docker/).
 
 ### Setup and Usage
 
-Follow the steps below to set up and run the tool using Docker:
+  Follow the steps below to set up and run the tool using Docker:
 
-#### 1. Clone the Repository
+  #### 1. Clone the Repository
 
-Clone the repository containing the Data Conversion Tool to your local machine:
+  Clone the repository containing the Data Conversion Tool to your local machine:
 
-```bash
-git clone git@github.com:moguloulou/data_format_conversion.git
-cd data_format_conversion
-```
+  ```bash
+  git clone git@github.com:moguloulou/data_format_conversion.git
+  cd data_format_conversion
+  ```
 
-#### 2. Build the Docker Image
+  #### 2. Build the Docker Image
 
-Navigate to the repository directory and build the Docker image using the provided `Dockerfile`:
+  Navigate to the repository directory and build the Docker image using the provided `Dockerfile`:
 
-```bash
-make build
-```
+  ```bash
+  make build
+  ```
 
-#### 3. Run the Docker Container
+  #### 3. Run the Docker Container
 
-Once the Docker image is built, you can run the tool in a Docker container. Use the following command to start the container:
+  Once the Docker image is built, you can run the tool in a Docker container. Use the following command to start the container:
 
-```bash
-make run
-```
+  ```bash
+  make run
+  ```
 
-#### 4. Follow the Interactive Prompts
+  #### 4. Follow the Interactive Prompts
 
-Once the container is running, you'll be prompted to provide input and output formats, as well as the data you want to convert. Follow the prompts and provide the required information.
+  Once the container is running, you'll be prompted to provide input and output formats, as well as the data you want to convert. Follow the prompts and provide the required information.
 
-#### 5. Exit the Container
+  #### 5. Exit the Container
 
-You can exit the Docker container by typing `quit` when prompted for input. Alternatively, you can press `Ctrl + C` to terminate the container.
+  You can exit the Docker container by typing `quit` when prompted for input. Alternatively, you can press `Ctrl + C` to terminate the container.
 
 ## License
 
