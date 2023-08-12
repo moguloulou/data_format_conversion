@@ -63,7 +63,7 @@ Follow the steps below to set up and run the tool using Docker:
 Clone the repository containing the Data Conversion Tool to your local machine:
 
 ```bash
-git clone <repository-url>
+git clone git@github.com:moguloulou/data_format_conversion.git
 cd data-conversion-tool
 ```
 
